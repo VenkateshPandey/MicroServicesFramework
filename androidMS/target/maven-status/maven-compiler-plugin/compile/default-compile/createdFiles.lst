@@ -1,0 +1,15 @@
+com\tekBase\androidMs\config\SwaggerConfig.class
+com\tekBase\androidMs\model\ClientError.class
+com\tekBase\androidMs\security\AuthManager.class
+com\tekBase\androidMs\security\services\AuthenticationService.class
+com\tekBase\androidMs\config\ApplicationConfig.class
+com\tekBase\androidMs\controllers\ApiTestController.class
+com\tekBase\androidMs\model\ApiResponse.class
+com\tekBase\androidMs\model\AuthTokenInfo.class
+com\tekBase\androidMs\schedulers\HealthCheck.class
+com\tekBase\androidMs\Application.class
+com\tekBase\androidMs\aspects\LogAspect.class
+com\tekBase\androidMs\config\ServiceExecutionTime.class
+com\tekBase\androidMs\security\ErrorHandler.class
+com\tekBase\androidMs\services\email\EmailService.class
+com\tekBase\androidMs\security\services\AuthInfoFromAD.class

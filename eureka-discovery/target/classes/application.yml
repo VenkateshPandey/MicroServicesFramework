@@ -1,0 +1,23 @@
+server:  
+  port: ${PORT:8761}
+    
+eureka:  
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: true  
+
+endpoints:
+  metrics:
+    id: metrics
+    sensitive: false
+    enabled: true
+
+info:
+  app:
+    name: Eureka Service registry
+    description: This is designed to register all available microservices
+    version: 1.0.0

@@ -1,0 +1,43 @@
+info:
+  app:
+    name: Zuul Api Gateway
+    description: This is for gateway to microservices
+    version: 1.0.0
+    
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+  metrics:
+    id: metrics
+    sensitive: false
+    enabled: true
+
+zuul:
+  prefix: /api
+  routes:
+    account: 
+      path: /android/**
+      serviceId: androidMs        
+
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: false
+      
+server:
+  port: 8765
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
