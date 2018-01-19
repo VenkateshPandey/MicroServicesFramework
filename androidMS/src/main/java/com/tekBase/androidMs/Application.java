@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableCircuitBreaker
 @EnableCaching
 @EnableScheduling
-// main boot class updated
+// main boot class
 public class Application {
 
 	public static void main(String[] args) {
